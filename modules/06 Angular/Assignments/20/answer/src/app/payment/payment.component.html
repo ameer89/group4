@@ -1,0 +1,20 @@
+<b>Total Price:</b> <b id="tlp">0</b> $ <br><br>
+<form [formGroup]="f" (submit)="onSubmit()">
+    <p>
+        <label> Card Number: </label>
+        <input formControlName="cn" required><br>
+    </p>
+    <p>
+        <label> Name of Card: </label>
+        <input formControlName="nc" required><br>
+    </p>
+    <p>
+        <label> Expiry Date: </label>
+        <input formControlName="exd" type="date" required><br>
+    </p>
+    <p>
+        <label>Security Code: </label>
+        <input formControlName="sc" maxlength="3" required><br>
+    </p>
+    <button type="submit">Submit</button>
+</form><br><br>
